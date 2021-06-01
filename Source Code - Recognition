@@ -1,0 +1,26 @@
+# Splitting Input Vectors and Outputs/Labels of Testing Data
+
+'''
+*---------------- SPLIT_INPUT_VECTORS_AND_LABELS --------------*
+|        Function: iloc()                                      |
+|            Purpose: Splitting Input Vector and Labels        |
+|        Arguments:                                            |
+|            Attribute: Name or Location Attribute to Split    |
+|        Return:                                               |
+|            Attribute: Split Attributes                       |
+*--------------------------------------------------------------*
+'''
+
+print("\n\nInputs Vectors (Feature Vectors) of Testing Data:")
+print("=================================================\n")
+input_vector_test = testing_data.iloc[: , :-1]
+print(input_vector_test)
+input_test=np.zeros((len(input_vector_test["Pixel Values"]),6075),dtype=np.uint8)
+
+for input_vector in enumerate(input_vector_test["Pixel Values"]):
+    input_test[input_vector[0]]=input_vector[1]
+print("\n\nOutputs/Labels of Testing Data:")
+print("==============================\n")
+print("    Label")
+output_label_test = testing_data.iloc[: ,-1]
+print(output_label_test)
