@@ -1,6 +1,6 @@
 <h1 align="center">Hi 👋, We are Team Squad-Up</h1>
 
-- 🔭 We are currently working on **Down Syndrome childrens drawing identification and sketch-based 3D shape retrieval using Convolutional Neural Network**
+- 🔭 We are currently working on **Down Syndrome childrens drawing identification and classification project**
 
 - 🌱 We are currently learning **AI/ ML**
 
